@@ -1,0 +1,16 @@
+<div class="body">
+    <div class="login">
+        <form [formGroup]="form" (ngSubmit)="submit(form.value)">
+            <mat-form-field appearance="fill" class="panel">
+                <mat-label>Login</mat-label>
+                <input matInput autocomplete="off" formControlName = "login">
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="panel">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput autocomplete="off" formControlName = "password">
+              </mat-form-field>
+              <br>
+              <button type="submit" mat-raised-button color="primary" class="panel entry" [disabled]="form.invalid">Login</button>
+        </form>
+    </div>
+</div>

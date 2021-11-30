@@ -1,0 +1,19 @@
+<div class="body">
+    <div class="login">
+        <h1 style="color: aliceblue;">New Item</h1>
+        <form [formGroup]="form" (ngSubmit)="addData(form.value)">
+            <mat-form-field appearance="fill" class="panel">
+                <mat-label>Name</mat-label>
+                <input matInput autocomplete="off" formControlName = "name">
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="panel">
+                <mat-label>Value</mat-label>
+                <input matInput autocomplete="off" formControlName = "value">
+              </mat-form-field>
+              <br>
+              <button type="submit" mat-raised-button class="entry" routerLink = "/data">Cancel</button>
+              <span class="example-spacer"></span>
+              <button type="submit" mat-raised-button color="primary" class="entry" [disabled]="form.invalid">Accept</button>
+        </form>
+    </div>
+  </div>

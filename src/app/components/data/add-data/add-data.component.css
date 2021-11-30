@@ -1,0 +1,25 @@
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.login
+{   
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    max-width: 330px;
+    background-color:rgb(24, 24, 24);
+    border-top-left-radius: 1% ;
+    border-top-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+}
+
+.entry
+{
+    height: 50px;
+}
