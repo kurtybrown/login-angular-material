@@ -19,9 +19,7 @@ export class LoginComponent implements OnInit {
   })
 
   constructor(private api: ProjectService, private router: Router, private snackBar: MatSnackBar) 
-  {
-
-  }
+  {}
 
   submit(form:LoginInterface): any
   {
